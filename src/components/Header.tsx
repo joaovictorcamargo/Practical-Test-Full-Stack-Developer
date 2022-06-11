@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import LogoMindTheGraph from "../assets/logo_mindthegraph.svg";
 import { SimpleButton } from "../components/SimpleButton";
+import { Options } from "./Options";
 
 export function Header() {
   const [isLargerThan880] = useMediaQuery("(min-width: 880px)");
@@ -18,44 +19,29 @@ export function Header() {
       <Flex alignItems="center">
         {isLargerThan760 ? (
           <>
-            <Text as="button" color="white.100" fontWeight="bold">
-              Templates
-            </Text>
+            <Options title={"Templates"} />
+
             <Flex mx="2.5rem">
-              <Text as="button" color="white.100" fontWeight="bold">
-                Pricing
-              </Text>
+              <Options title={"Pricing"} />
             </Flex>
 
-            <Text as="button" color="white.100" fontWeight="bold">
-              Blog
-            </Text>
+            <Options title={"Blog"} />
             <Flex mx="2.5rem">
-              <Text as="button" color="white.100" fontWeight="bold">
-                Jobs
-              </Text>
+              <Options title={"Jobs"} />
             </Flex>
           </>
         ) : (
           <>
             <Flex flexDir="column" alignItems="center">
-              <Text as="button" color="white.100" fontWeight="bold">
-                Templates
-              </Text>
+              <Options title={"Templates"} />
               <Flex mx="2.5rem" mt="1rem">
-                <Text as="button" color="white.100" fontWeight="bold">
-                  Pricing
-                </Text>
+                <Options title={"Pricing"} />
               </Flex>
             </Flex>
             <Flex flexDir="column" alignItems="center">
-              <Text as="button" color="white.100" fontWeight="bold">
-                Blog
-              </Text>
+              <Options title={"Blog"} />
               <Flex mx="2.5rem" mt="1rem">
-                <Text as="button" color="white.100" fontWeight="bold">
-                  Jobs
-                </Text>
+                <Options title={"Jobs"} />
               </Flex>
             </Flex>
           </>
