@@ -1,8 +1,8 @@
 import { Flex, Text, useMediaQuery } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import LogoMindTheGraph from "../assets/logo_mindthegraph.svg";
 import { SimpleButton } from "../components/SimpleButton";
-import { Options } from "./Options";
 
 export function Header() {
   const [isLargerThan880] = useMediaQuery("(min-width: 880px)");
@@ -10,7 +10,11 @@ export function Header() {
 
   return (
     <Flex justifyContent="space-between">
-      <LogoMindTheGraph />
+      <Link href="/">
+        <Flex as="button">
+          <LogoMindTheGraph />
+        </Flex>
+      </Link>
       <Flex alignItems="center">
         {isLargerThan760 ? (
           <>
@@ -59,40 +63,7 @@ export function Header() {
         {isLargerThan880 ? (
           <>
             <Flex mr="1rem">
-              <SimpleButton
-                text={"Login"}
-                width={"100px"}
-                variant={"outline"}
-                borderColor={"with.100"}
-                height={"40px"}
-                borderRadius={"20px"}
-                color={"white.100"}
-              />
-            </Flex>
-
-            <SimpleButton
-              text={"Sign up free"}
-              width={"180px"}
-              variant={"solid"}
-              height={"40px"}
-              borderRadius={"20px"}
-              bgColor={"purple.100"}
-              color={"white.100"}
-            />
-          </>
-        ) : (
-          <>
-            <Flex flexDir="column" alignItems="center">
-              <SimpleButton
-                text={"Sign up free"}
-                width={"180px"}
-                variant={"solid"}
-                height={"40px"}
-                borderRadius={"20px"}
-                bgColor={"purple.100"}
-                color={"white.100"}
-              />
-              <Flex mt="1rem">
+              <Link href={"/LoginPage"}>
                 <SimpleButton
                   text={"Login"}
                   width={"100px"}
@@ -102,6 +73,47 @@ export function Header() {
                   borderRadius={"20px"}
                   color={"white.100"}
                 />
+              </Link>
+            </Flex>
+            <Link href={"/RegisterUser"}>
+              <SimpleButton
+                text={"Sign up free"}
+                width={"180px"}
+                variant={"solid"}
+                height={"40px"}
+                borderRadius={"20px"}
+                bgColor={"purple.100"}
+                color={"white.100"}
+              />
+            </Link>
+          </>
+        ) : (
+          <>
+            <Flex flexDir="column" alignItems="center">
+              <Link href={"/RegisterUser"}>
+                <SimpleButton
+                  text={"Sign up free"}
+                  width={"180px"}
+                  variant={"solid"}
+                  height={"40px"}
+                  borderRadius={"20px"}
+                  bgColor={"purple.100"}
+                  color={"white.100"}
+                />
+              </Link>
+
+              <Flex mt="1rem">
+                <Link href={"/LoginPage"}>
+                  <SimpleButton
+                    text={"Login"}
+                    width={"100px"}
+                    variant={"outline"}
+                    borderColor={"with.100"}
+                    height={"40px"}
+                    borderRadius={"20px"}
+                    color={"white.100"}
+                  />
+                </Link>
               </Flex>
             </Flex>
           </>
