@@ -1,13 +1,12 @@
 import React from "react";
-import { Flex, Text, useMediaQuery } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import CanDoCard from "../components/CanDoCard";
 import Image_2 from "../assets/image_2.svg";
 import Image_3 from "../assets/image_3.svg";
 import Image_1 from "../assets/image_1.svg";
 
 function CardsSection() {
-  const [isLargerThan770] = useMediaQuery("(min-width: 770px)");
-
+  const oii = ">";
   return (
     <>
       <Flex mt="98px" mb="88px" alignItems="center" justifyContent="center">
@@ -23,6 +22,11 @@ function CardsSection() {
 
       <Flex alignItems="center" justifyContent="space-evenly" flexDir="row">
         <CanDoCard
+          fontweighttext2="medium"
+          text1size="20px"
+          text3={<>{oii} LEARN MORE</>}
+          text2color="black.100"
+          text1color="purple.100"
           image={<Image_2 />}
           text1={
             <>
@@ -47,6 +51,11 @@ function CardsSection() {
           mb="12px"
         >
           <CanDoCard
+            fontweighttext2="medium"
+            text1size="20px"
+            text3={<>{oii} LEARN MORE</>}
+            text2color="black.100"
+            text1color="purple.100"
             image={<Image_3 />}
             text1={
               <>
@@ -65,6 +74,11 @@ function CardsSection() {
         </Flex>
 
         <CanDoCard
+          fontweighttext2="medium"
+          text1size="20px"
+          text3={<>{oii} LEARN MORE</>}
+          text2color="black.100"
+          text1color="purple.100"
           image={<Image_1 />}
           text1={
             <>
