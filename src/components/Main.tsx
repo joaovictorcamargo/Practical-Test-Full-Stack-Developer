@@ -41,12 +41,13 @@ function Main() {
         <Link href={"/"}>
           <SimpleButton
             text={"Start creating now"}
-            width={"180px"}
+            width={["150px", "160px", "170px", "180px"]}
             variant={"solid"}
             height={"40px"}
             borderRadius={"20px"}
             bgColor={"purple.100"}
             color={"white.100"}
+            fontSizeText={["14px", "15px", "16px", "17px"]}
           />
         </Link>
       </Flex>

@@ -22,8 +22,10 @@ function CardsSection() {
 
       <Flex alignItems="center" justifyContent="space-evenly" flexDir="row">
         <CanDoCard
+          text3Size={["15px", "17px", "20px", "20px"]}
+          text2size={["15px", "17px", "20px", "20px"]}
           fontweighttext2="medium"
-          text1size="20px"
+          text1size={["17px", "20px", "24px", "24px"]}
           text3={<>{oii} LEARN MORE</>}
           text2color="black.100"
           text1color="purple.100"
@@ -51,8 +53,10 @@ function CardsSection() {
           mb="12px"
         >
           <CanDoCard
+            text3Size={["15px", "17px", "20px", "20px"]}
+            text2size={["15px", "17px", "20px", "20px"]}
             fontweighttext2="medium"
-            text1size="20px"
+            text1size={["17px", "20px", "24px", "24px"]}
             text3={<>{oii} LEARN MORE</>}
             text2color="black.100"
             text1color="purple.100"
@@ -74,8 +78,10 @@ function CardsSection() {
         </Flex>
 
         <CanDoCard
+          text3Size={["15px", "17px", "20px", "20px"]}
+          text2size={["15px", "17px", "20px", "20px"]}
           fontweighttext2="medium"
-          text1size="20px"
+          text1size={["17px", "20px", "24px", "24px"]}
           text3={<>{oii} LEARN MORE</>}
           text2color="black.100"
           text1color="purple.100"

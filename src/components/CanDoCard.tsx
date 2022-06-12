@@ -6,9 +6,11 @@ interface ICanDoCardProps {
   text1: ReactNode;
   text2: ReactNode;
   text3?: ReactNode;
+  text3Size?: string[];
   text1color: string;
   text2color: string;
-  text1size: string;
+  text1size: string[];
+  text2size: string[];
   fontweighttext2: string;
 }
 
@@ -20,7 +22,9 @@ function CanDoCard({
   text1color,
   text2color,
   text1size,
+  text2size,
   fontweighttext2,
+  text3Size,
 }: ICanDoCardProps) {
   return (
     <Flex
@@ -41,13 +45,18 @@ function CanDoCard({
         {text1}
       </Text>
 
-      <Text mb="66px" textAlign="center" fontSize="20px" color={text2color}>
+      <Text
+        mb="66px"
+        textAlign="center"
+        fontSize={text2size}
+        color={text2color}
+      >
         {text2}
       </Text>
       <Text
         as="button"
         textAlign="center"
-        fontSize="20px"
+        fontSize={text3Size}
         fontWeight="bold"
         color="purple.100"
       >

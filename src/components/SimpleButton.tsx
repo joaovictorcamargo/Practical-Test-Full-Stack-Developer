@@ -7,9 +7,10 @@ interface SimpleButtonProps {
   borderRadius: string;
   bgColor?: string;
   color?: string;
-  width: string;
+  width: string[];
   height: string;
   variant: string;
+  fontSizeText: string[];
 }
 
 export const SimpleButton = ({
@@ -22,6 +23,7 @@ export const SimpleButton = ({
   height,
   onClick,
   variant,
+  fontSizeText,
 }: SimpleButtonProps) => {
   return (
     <Button
@@ -30,6 +32,7 @@ export const SimpleButton = ({
       borderColor={borderColor}
       variant={variant}
       bgColor={bgColor}
+      fontSize={fontSizeText}
       borderRadius={borderRadius}
       color={color}
       _hover={{
