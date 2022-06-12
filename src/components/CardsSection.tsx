@@ -20,7 +20,11 @@ function CardsSection() {
         </Text>
       </Flex>
 
-      <Flex alignItems="center" justifyContent="space-evenly" flexDir="row">
+      <Flex
+        alignItems="center"
+        justifyContent="space-evenly"
+        flexDir={["column", "column", "row", "row"]}
+      >
         <CanDoCard
           text3Size={["15px", "17px", "20px", "20px"]}
           text2size={["15px", "17px", "20px", "20px"]}
