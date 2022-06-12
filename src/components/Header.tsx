@@ -1,4 +1,4 @@
-import { Flex, Text, useMediaQuery } from "@chakra-ui/react";
+import { Flex, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import LogoMindTheGraph from "../assets/logo_mindthegraph.svg";
@@ -52,7 +52,8 @@ export function Header() {
               <Link href={"/LoginPage"}>
                 <SimpleButton
                   text={"Login"}
-                  width={"100px"}
+                  width={["70px", "80px", "100px", "100px"]}
+                  fontSizeText={["10px", "12px", "16px", "16px"]}
                   variant={"outline"}
                   borderColor={"with.100"}
                   height={"40px"}
@@ -64,7 +65,8 @@ export function Header() {
             <Link href={"/RegisterUser"}>
               <SimpleButton
                 text={"Sign up free"}
-                width={"180px"}
+                width={["80px", "100px", "150px", "170px"]}
+                fontSizeText={["10px", "12px", "16px", "16px"]}
                 variant={"solid"}
                 height={"40px"}
                 borderRadius={"20px"}
@@ -79,7 +81,8 @@ export function Header() {
               <Link href={"/RegisterUser"}>
                 <SimpleButton
                   text={"Sign up free"}
-                  width={"180px"}
+                  width={["80px", "100px", "150px", "170px"]}
+                  fontSizeText={["10px", "12px", "16px", "16px"]}
                   variant={"solid"}
                   height={"40px"}
                   borderRadius={"20px"}
@@ -92,7 +95,8 @@ export function Header() {
                 <Link href={"/LoginPage"}>
                   <SimpleButton
                     text={"Login"}
-                    width={"100px"}
+                    width={["70px", "80px", "100px", "100px"]}
+                    fontSizeText={["10px", "12px", "16px", "16px"]}
                     variant={"outline"}
                     borderColor={"with.100"}
                     height={"40px"}
