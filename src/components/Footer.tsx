@@ -17,7 +17,7 @@ function Footer() {
         pt={["1px", "10px", "51px", "81px"]}
         mt="73px"
         w="1054px"
-        h="1200"
+        h={["2150", "2150", "1200", "1200"]}
         bgColor="purple.200"
         borderRadius="24px"
         mb="121px"
@@ -48,6 +48,7 @@ function Footer() {
         <Flex
           mb={["1px", "15px", "81px", "81px"]}
           alignItems="center"
+          flexDir={["column", "column", "row", "row"]}
           justifyContent="space-evenly"
         >
           <CanDoCard
@@ -98,7 +99,11 @@ function Footer() {
           />
         </Flex>
 
-        <Flex alignItems="center" justifyContent="space-evenly">
+        <Flex
+          alignItems="center"
+          justifyContent="space-evenly"
+          flexDir={["column", "column", "row", "row"]}
+        >
           <CanDoCard
             text2size={["15px", "17px", "20px", "20px"]}
             fontweighttext2="regular"
