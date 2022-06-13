@@ -10,7 +10,10 @@ export function Header() {
   const [isLargerThan760] = useMediaQuery("(min-width: 760px)");
 
   return (
-    <Flex justifyContent="space-between">
+    <Flex
+      justifyContent="space-between"
+      flexDir={isLargerThan760 ? "row" : "column"}
+    >
       <Link href="/">
         <Flex as="button">
           <LogoMindTheGraph />

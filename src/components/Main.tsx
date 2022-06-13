@@ -14,7 +14,7 @@ function Main() {
   const [isLargerThan1011] = useMediaQuery("(min-width: 1011px)");
   const [isLargerThan864] = useMediaQuery("(min-width: 864px)");
   return (
-    <Flex>
+    <Flex flexDir={isLargerThan1011 ? "row" : "column"}>
       <Flex
         flexDir="column"
         mt={isLargerThan880 ? "60px" : "10px"}
@@ -52,28 +52,15 @@ function Main() {
         </Link>
       </Flex>
       <Flex flexShrink={0.3} ml={isLargerThan1011 ? "144px" : "1px"} mt="50px">
-        {isLargerThan1282 ? (
-          <OurImage
-            src="/images/head02.png"
-            width="650px"
-            height="427px"
-            alt="Mind the Graph tool
+        <OurImage
+          src="/images/head02.png"
+          width="650px"
+          height="427px"
+          alt="Mind the Graph tool
 to create science
 figures, posters and
 infographics"
-          />
-        ) : (
-          <OurImage
-            objectFit="none"
-            src="/images/head02.png"
-            width="650px"
-            height="427px"
-            alt="Mind the Graph tool
-to create science
-figures, posters and
-infographics"
-          />
-        )}
+        />
       </Flex>
     </Flex>
   );
