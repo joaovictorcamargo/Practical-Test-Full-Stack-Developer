@@ -17,19 +17,24 @@ function Main() {
     <Flex flexDir={isLargerThan1011 ? "row" : "column"}>
       <Flex
         flexDir="column"
-        mt={isLargerThan880 ? "60px" : "10px"}
-        ml={isLargerThan1282 ? "111px" : "11px"}
+        mt={isLargerThan880 ? "3.75rem" : "0.625rem"}
+        ml={isLargerThan1282 ? "6.875rem" : "0.625rem"}
       >
         {isLargerThan1282 ? (
-          <Text mb="21px" fontSize="34px" fontWeight="bold" color="white.100">
+          <Text
+            mb="1.25rem"
+            fontSize="2.125rem"
+            fontWeight="bold"
+            color="white.100"
+          >
             Discover all
             <br /> possibilities of using <br /> this powerfull tool <br /> and
             create science <br /> figures, posters and <br /> infographics.
           </Text>
         ) : (
           <Text
-            mb="21px"
-            fontSize={isLargerThan864 ? "34px" : "24px"}
+            mb="1.25rem"
+            fontSize={isLargerThan864 ? "2.125rem" : "1.5rem"}
             fontWeight="bold"
             color="white.100"
           >
@@ -41,17 +46,21 @@ function Main() {
         <Link href={"/"}>
           <SimpleButton
             text={"Start creating now"}
-            width={["150px", "160px", "170px", "180px"]}
+            width={["9.375rem", "10rem", "10.625rem", "11.25rem"]}
             variant={"solid"}
-            height={"40px"}
-            borderRadius={"20px"}
+            height={"2.5rem"}
+            borderRadius={"1.25rem"}
             bgColor={"purple.100"}
             color={"white.100"}
-            fontSizeText={["14px", "15px", "16px", "17px"]}
+            fontSizeText={["0.875rem", "0.875rem", "1rem", "1rem"]}
           />
         </Link>
       </Flex>
-      <Flex flexShrink={0.3} ml={isLargerThan1011 ? "144px" : "1px"} mt="50px">
+      <Flex
+        flexShrink={0.3}
+        ml={isLargerThan1011 ? "9rem" : "0.125rem"}
+        mt="3.125rem"
+      >
         <OurImage
           src="/images/head02.png"
           width="650px"

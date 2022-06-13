@@ -14,29 +14,29 @@ function Footer() {
     <Flex alignItems="center" justifyContent="center">
       <Flex
         flexDir="column"
-        pt={["1px", "10px", "51px", "81px"]}
-        mt="73px"
+        pt={["0.125rem", "0.625rem", "3.125rem", "5rem"]}
+        mt="4.5rem"
         w="1054px"
         h={["2150", "2150", "1200", "1200"]}
         bgColor="purple.200"
-        borderRadius="24px"
-        mb="121px"
+        borderRadius="1.5rem"
+        mb="7.5rem"
       >
         <Text
           textAlign="center"
-          fontSize="34px"
+          fontSize="2.125rem"
           fontWeight="bold"
           color="white.100"
-          mb="55px"
+          mb="3.375rem"
         >
           Create effective science figures in minutes
         </Text>
         <Text
           textAlign="center"
-          fontSize={["15px", "15px", "20px", "20px"]}
+          fontSize={["0.875rem", "0.875rem", "1.25rem", "1.25rem"]}
           fontWeight="regular"
           color="white.100"
-          mb={["20px", "30px", "94px", "94px"]}
+          mb={["1.25rem", "1.875rem", "5.875rem", "5.875rem"]}
         >
           We built Mind the Graph for simplicity. The platform is easy to use
           and just about anybody
@@ -46,16 +46,16 @@ function Footer() {
         </Text>
 
         <Flex
-          mb={["1px", "15px", "81px", "81px"]}
+          mb={["0.125rem", "0.875rem", "5rem", "5rem"]}
           alignItems="center"
           flexDir={["column", "column", "row", "row"]}
           justifyContent="space-evenly"
         >
           <CanDoCard
-            text2size={["15px", "17px", "20px", "20px"]}
+            text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
             fontweighttext2="regular"
             text2color="white.100"
-            text1size={["17px", "20px", "24px", "24px"]}
+            text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
             text1color="white.100"
             image={<Ico_Drag />}
             text1={<>Drag and Drop</>}
@@ -67,10 +67,10 @@ function Footer() {
             }
           />
           <CanDoCard
-            text2size={["15px", "17px", "20px", "20px"]}
+            text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
             fontweighttext2="regular"
             text2color="white.100"
-            text1size={["17px", "20px", "24px", "24px"]}
+            text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
             text1color="white.100"
             image={<Ico_Premade />}
             text1={<>Pre-Made Resources</>}
@@ -83,10 +83,10 @@ function Footer() {
             }
           />
           <CanDoCard
-            text2size={["15px", "17px", "20px", "20px"]}
+            text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
             fontweighttext2="regular"
             text2color="white.100"
-            text1size={["17px", "20px", "24px", "24px"]}
+            text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
             text1color="white.100"
             image={<Ico_Platform />}
             text1={<>Online Platform</>}
@@ -105,10 +105,10 @@ function Footer() {
           flexDir={["column", "column", "row", "row"]}
         >
           <CanDoCard
-            text2size={["15px", "17px", "20px", "20px"]}
+            text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
             fontweighttext2="regular"
             text2color="white.100"
-            text1size={["17px", "20px", "24px", "24px"]}
+            text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
             text1color="white.100"
             image={<Ico_Odemand />}
             text1={
@@ -125,10 +125,10 @@ function Footer() {
             }
           />
           <CanDoCard
-            text2size={["15px", "17px", "20px", "20px"]}
+            text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
             fontweighttext2="regular"
             text2color="white.100"
-            text1size={["17px", "20px", "24px", "24px"]}
+            text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
             text1color="white.100"
             image={<Ico_Multiple />}
             text1={
@@ -146,10 +146,10 @@ function Footer() {
             }
           />
           <CanDoCard
-            text2size={["15px", "17px", "20px", "20px"]}
+            text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
             fontweighttext2="regular"
             text2color="white.100"
-            text1size={["17px", "20px", "24px", "24px"]}
+            text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
             text1color="white.100"
             image={<Ico_Share />}
             text1={<>Share creations</>}
@@ -165,13 +165,13 @@ function Footer() {
 
         <Flex alignItems="center" justifyContent="center">
           <SimpleButton
-            fontSizeText={["10px", "12px", "16px", "16px"]}
+            fontSizeText={["0.625rem", "0.75rem", "1rem", "1rem"]}
             text={"EXPLORE MIND THE GRAPH"}
-            width={["200px", "220px", "290px", "290px"]}
+            width={["12.5rem", "13.75rem", "18.125rem", "18.125rem"]}
             variant={"outline"}
             borderColor={"with.100"}
-            height={"40px"}
-            borderRadius={"20px"}
+            height={"2.5rem"}
+            borderRadius={"1.25rem"}
             color={"white.100"}
           />
         </Flex>

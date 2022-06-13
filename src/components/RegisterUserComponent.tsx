@@ -131,7 +131,12 @@ export default function RegisterUserComponent() {
       >
         <Flex flexDir="column" alignItems="center" justifyContent="center">
           <LogoMindTheGraph />
-          <Text fontFamily="heading" fontSize="28px" color="white.100" p="33px">
+          <Text
+            fontFamily="heading"
+            fontSize="1.75rem"
+            color="white.100"
+            p="2rem"
+          >
             Crie sua conta
           </Text>
           <Flex
@@ -139,7 +144,7 @@ export default function RegisterUserComponent() {
             alignItems="center"
             justifyContent="center"
             borderRadius={5}
-            shadow="1px"
+            shadow="0.125rem"
             bg="white"
             w={382}
           >
@@ -150,7 +155,7 @@ export default function RegisterUserComponent() {
                 pr={10}
                 pt={8.5}
                 pb={8.5}
-                spacing="24px"
+                spacing="1.5rem"
               >
                 <InputGroup w="100%">
                   <Stack spacing="4">
