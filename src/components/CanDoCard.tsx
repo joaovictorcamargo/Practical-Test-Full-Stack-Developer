@@ -31,12 +31,12 @@ function CanDoCard({
       alignItems="center"
       justifyContent="center"
       flexDir="column"
-      mb="12px"
+      mb="0.75rem"
     >
       {image}
 
       <Text
-        mb="13px"
+        mb="0.75rem"
         textAlign="center"
         fontSize={text1size}
         fontWeight={fontweighttext2}
@@ -46,7 +46,7 @@ function CanDoCard({
       </Text>
 
       <Text
-        mb="66px"
+        mb="4.125rem"
         textAlign="center"
         fontSize={text2size}
         color={text2color}

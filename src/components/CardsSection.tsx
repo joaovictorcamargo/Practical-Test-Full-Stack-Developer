@@ -9,10 +9,15 @@ function CardsSection() {
   const oii = ">";
   return (
     <>
-      <Flex mt="98px" mb="88px" alignItems="center" justifyContent="center">
+      <Flex
+        mt="6.125rem"
+        mb="5.5rem"
+        alignItems="center"
+        justifyContent="center"
+      >
         <Text
           textAlign="center"
-          fontSize="34px"
+          fontSize="2.125rem"
           fontWeight="bold"
           color="purple.100"
         >
@@ -26,10 +31,10 @@ function CardsSection() {
         flexDir={["column", "column", "row", "row"]}
       >
         <CanDoCard
-          text3Size={["15px", "17px", "20px", "20px"]}
-          text2size={["15px", "17px", "20px", "20px"]}
+          text3Size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
+          text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
           fontweighttext2="medium"
-          text1size={["17px", "20px", "24px", "24px"]}
+          text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
           text3={<>{oii} LEARN MORE</>}
           text2color="black.100"
           text1color="purple.100"
@@ -54,13 +59,13 @@ function CardsSection() {
           alignItems="center"
           justifyContent="center"
           flexDir="column"
-          mb="12px"
+          mb="0.75rem"
         >
           <CanDoCard
-            text3Size={["15px", "17px", "20px", "20px"]}
-            text2size={["15px", "17px", "20px", "20px"]}
+            text3Size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
+            text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
             fontweighttext2="medium"
-            text1size={["17px", "20px", "24px", "24px"]}
+            text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
             text3={<>{oii} LEARN MORE</>}
             text2color="black.100"
             text1color="purple.100"
@@ -82,10 +87,10 @@ function CardsSection() {
         </Flex>
 
         <CanDoCard
-          text3Size={["15px", "17px", "20px", "20px"]}
-          text2size={["15px", "17px", "20px", "20px"]}
+          text3Size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
+          text2size={["0.875rem", "1rem", "1.25rem", "1.25rem"]}
           fontweighttext2="medium"
-          text1size={["17px", "20px", "24px", "24px"]}
+          text1size={["1rem", "1.25rem", "1.5rem", "1.5rem"]}
           text3={<>{oii} LEARN MORE</>}
           text2color="black.100"
           text1color="purple.100"
