@@ -85,7 +85,12 @@ export default function Login() {
       >
         <Flex flexDir="column" alignItems="center" justifyContent="center">
           <LogoMindTheGraph />
-          <Text fontFamily="heading" fontSize="28px" color="white.100" p="33px">
+          <Text
+            fontFamily="heading"
+            fontSize="1.75rem"
+            color="white.100"
+            p="2rem"
+          >
             Crie sua conta
           </Text>
           <Flex
@@ -93,11 +98,11 @@ export default function Login() {
             alignItems="center"
             justifyContent="center"
             borderRadius={5}
-            shadow="1px"
+            shadow="0.125rem"
             bg="white"
             w={382}
           >
-            <Stack alignItems="center" spacing="24px">
+            <Stack alignItems="center" spacing="1.5rem">
               <InputGroup w="100%">
                 <Box>
                   <Text fontFamily="heading" fontSize="md" color="dark.200">

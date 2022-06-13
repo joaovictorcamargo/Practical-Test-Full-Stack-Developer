@@ -55,12 +55,12 @@ export function Header() {
               <Link href={"/LoginPage"}>
                 <SimpleButton
                   text={"Login"}
-                  width={["70px", "80px", "100px", "100px"]}
-                  fontSizeText={["10px", "12px", "16px", "16px"]}
+                  width={["4.375rem", "5rem", "6.25rem", "6.25rem"]}
+                  fontSizeText={["0.625rem", "0.75rem", "1rem", "1rem"]}
                   variant={"outline"}
                   borderColor={"with.100"}
-                  height={"40px"}
-                  borderRadius={"20px"}
+                  height={"2.5rem"}
+                  borderRadius={"1.25rem"}
                   color={"white.100"}
                 />
               </Link>
@@ -68,11 +68,11 @@ export function Header() {
             <Link href={"/RegisterUser"}>
               <SimpleButton
                 text={"Sign up free"}
-                width={["80px", "100px", "150px", "170px"]}
-                fontSizeText={["10px", "12px", "16px", "16px"]}
+                width={["5rem", "6.25rem", "9.375rem", "10.625rem"]}
+                fontSizeText={["0.625rem", "0.75rem", "1rem", "1rem"]}
                 variant={"solid"}
-                height={"40px"}
-                borderRadius={"20px"}
+                height={"2.5rem"}
+                borderRadius={"1.25rem"}
                 bgColor={"purple.100"}
                 color={"white.100"}
               />
@@ -84,11 +84,11 @@ export function Header() {
               <Link href={"/RegisterUser"}>
                 <SimpleButton
                   text={"Sign up free"}
-                  width={["80px", "100px", "150px", "170px"]}
-                  fontSizeText={["10px", "12px", "16px", "16px"]}
+                  width={["5rem", "6.25rem", "9.375rem", "10.625rem"]}
+                  fontSizeText={["0.625rem", "0.75rem", "1rem", "1rem"]}
                   variant={"solid"}
-                  height={"40px"}
-                  borderRadius={"20px"}
+                  height={"2.5rem"}
+                  borderRadius={"1.25rem"}
                   bgColor={"purple.100"}
                   color={"white.100"}
                 />
@@ -98,12 +98,12 @@ export function Header() {
                 <Link href={"/LoginPage"}>
                   <SimpleButton
                     text={"Login"}
-                    width={["70px", "80px", "100px", "100px"]}
-                    fontSizeText={["10px", "12px", "16px", "16px"]}
+                    width={["4.375rem", "5rem", "6.25rem", "6.25rem"]}
+                    fontSizeText={["0.625rem", "0.75rem", "1rem", "1rem"]}
                     variant={"outline"}
                     borderColor={"with.100"}
-                    height={"40px"}
-                    borderRadius={"20px"}
+                    height={"2.5rem"}
+                    borderRadius={"1.25rem"}
                     color={"white.100"}
                   />
                 </Link>
