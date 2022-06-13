@@ -100,7 +100,7 @@ export default function Login() {
             borderRadius={5}
             shadow="0.125rem"
             bg="white"
-            w={382}
+            w={350}
           >
             <Stack alignItems="center" spacing="1.5rem">
               <InputGroup w="100%">
