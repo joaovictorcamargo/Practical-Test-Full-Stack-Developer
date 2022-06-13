@@ -15,6 +15,7 @@ import {
   Flex,
   Button,
   Spacer,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { BsEyeSlashFill } from "react-icons/bs";
 import { IoEyeSharp } from "react-icons/io5";
@@ -146,7 +147,7 @@ export default function RegisterUserComponent() {
             borderRadius={5}
             shadow="0.125rem"
             bg="white"
-            w={382}
+            w={340}
           >
             <form onSubmit={handleSubmit(postApi)}>
               <Stack
